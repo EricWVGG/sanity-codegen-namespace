@@ -91,6 +91,11 @@ export default async function typegenGenerateAction(
 
   typeFile.write(generatedFileWarning)
 
+  const namespace = codegenConfig.namespace
+  if (namespace) {
+    typeFile.write(`export as namespace ${namespace}\n`)
+  }
+
   const stats = {
     queryFilesCount: 0,
     errors: 0,

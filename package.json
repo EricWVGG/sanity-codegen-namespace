@@ -1,5 +1,5 @@
 {
-  "name": "sanity-root",
+  "name": "sanity-root-typegen-namespace",
   "version": "0.0.0",
   "private": true,
   "scripts": {
